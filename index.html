@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Building Directory</title>
+	<SCRIPT>
+
+var imageURL = "images/BuildingDirectoryByFloor.jpg";
+
+if (document.images) {
+    var floor = new Image();
+    floor.src = "images/BuildingDirectoryByFloor.jpg";
+
+    var alpha = new Image();
+    alpha.src = "images/BuildingDirectoryAlpha.jpg";
+}
+
+function floorImage() {
+    if (document.images) {
+          if (imageURL == "images/BuildingDirectoryAlpha.jpg") imageURL = "images/BuildingDirectoryByFloor.jpg";
+          else imageURL = "images/BuildingDirectoryByFloor.jpg";
+
+        document.myImage.src = imageURL;
+    }
+}
+function alphaImage() {
+    if (document.images) {
+          if (imageURL == "images/BuildingDirectoryByFloor.jpg") imageURL = "images/BuildingDirectoryAlpha.jpg";
+          else imageURL = "images/BuildingDirectoryAlpha.jpg";
+
+        document.myImage.src = imageURL;
+    }
+}
+
+</SCRIPT>
+
+ <script language="JavaScript1.1">
+
+// Photos SlideShow
+
+		var slideimages=new Array()
+		var slidelinks=new Array()
+		function slideshowimages(){
+		for (i=0;i<slideshowimages.arguments.length;i++){
+		slideimages[i]=new Image()
+		slideimages[i].src=slideshowimages.arguments[i]
+		}
+		}
+
+		function slideshowlinks(){
+		for (i=0;i<slideshowlinks.arguments.length;i++)
+		slidelinks[i]=slideshowlinks.arguments[i]
+		}
+
+		function gotoshow(){
+		if (!window.winslide||winslide.closed)
+		winslide=window.open(slidelinks[whichlink])
+		else
+		winslide.location=slidelinks[whichlink]
+		winslide.focus()
+}
+
+
+</script>
+
+</head>
+<body background="images/cw14background.jpg">
+    <div class="pagetitle">BUILDING DIRECTORY</div>
+   	
+    <div class="appbody">
+    	<div class="tenants"> 
+    		<img SRC="images/BuildingDirectoryAlpha.jpg" alt="tenant list" height="725" width="1100" NAME="myImage"> 
+    	</div>
+    		<div class="photos"> 
+    			<img src="javascript:gotoshow()" name="slide" border=0 width=512 height=342></img>
+				<script>
+				<!--
+
+				//configure the paths of the images, plus corresponding target links
+				slideshowimages("images/Nature/001.jpg","images/Nature/002.jpg","images/Nature/003.jpg","images/Nature/004.jpg","images/Nature/005.jpg", "images/Nature/006.jpg", "images/Nature/007.jpg", "images/Nature/008.jpg", "images/Nature/009.jpg", "images/Nature/010.jpg", "images/Nature/011.jpg", "images/Nature/012.jpg", "images/Nature/013.jpg", "images/Nature/014.jpg", "images/Nature/015.jpg", "images/Nature/016.jpg", "images/Nature/017.jpg", "images/Nature/018.jpg", "images/Nature/019.jpg", "images/Nature/020.jpg")
+
+
+				//configure the speed of the slideshow, in miliseconds
+				var slideshowspeed=2000
+
+				var whichlink=0
+				var whichimage=0
+				function slideit(){
+				if (!document.images)
+				return
+				document.images.slide.src=slideimages[whichimage].src
+				whichlink=whichimage
+				if (whichimage<slideimages.length-1)
+				whichimage++
+				else
+				whichimage=0
+				setTimeout("slideit()",slideshowspeed)
+				}
+				slideit()
+
+				//-->
+				</script>
+
+
+			</div>
+ 	</div>
+
+ 		<div class="selection">
+    		<FORM>
+    		
+    		Search:
+    		&nbsp;
+    		&nbsp;
+    		<INPUT TYPE="radio" name="selection" value="alpha" id="alpha" onClick="alphaImage();">
+    		<label for="alpha">alphabetically</label>
+    		&nbsp;
+    		|
+    		&nbsp;
+    		<INPUT TYPE="radio" name="selection" value="floor" id="floor" onClick="floorImage();">
+    		<label for="floor">by floor</label>
+			</FORM>
+			<p></p>
+			
+
+      </br>
+		</div>
+
+    <div class="menu"> 
+    	<div class="menu1"><a href="index.html"><img src="images/buildingdirectorybutton.png"></a></div>
+    	&nbsp;
+    	<div class="menu2"><a href="campusmap.html"><img src="images/Campusmapbutton.png"></a></div>
+    	&nbsp;
+    	<div class="menu3"><a href="corporatewoods.html"><img src="images/cwbutton.png"></a></div>
+    	<div class="menu4"><a href="wgo.html"><img src="images/wgobutton.png"></a></div>
+    </div>
+
+</body>
+</html>

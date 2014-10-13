@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Corporate Woods</title>
+
+    <script language="JavaScript1.1">
+
+// Photos SlideShow
+
+        var slideimages=new Array()
+        var slidelinks=new Array()
+        function slideshowimages(){
+        for (i=0;i<slideshowimages.arguments.length;i++){
+        slideimages[i]=new Image()
+        slideimages[i].src=slideshowimages.arguments[i]
+        }
+        }
+
+        function slideshowlinks(){
+        for (i=0;i<slideshowlinks.arguments.length;i++)
+        slidelinks[i]=slideshowlinks.arguments[i]
+        }
+
+        function gotoshow(){
+        if (!window.winslide||winslide.closed)
+        winslide=window.open(slidelinks[whichlink])
+        else
+        winslide.location=slidelinks[whichlink]
+        winslide.focus()
+}
+
+
+</script>
+
+    
+    
+
+</head>
+<body background="images/cw14background.jpg">
+    <div class="pagetitle">WHAT'S GOING ON? / EVENTS</div>
+   <!--  <div class="Address"> Building 14</div> -->
+    <div class="appbody">
+        <div class="wgo"><img SRC="images/wgo/WhatsGoingOn.jpg" alt="WhatsGoingOn.jpg" height="343" width="563" NAME="WhatsGoingOn" usemap="#wgomap" />
+        <map name="wgomap">
+        <area shape ="rect" coords ="25,243,292,292"
+        href ="events.html" alt="WGO" />
+            <p></p>
+        <img SRC="images/wgo/PublicEvents.jpg" alt="PublicEvents.jpg" height="343" width="563" NAME="PublicEvents">
+        </div>
+        <div class="tenantevents"><img SRC="images/wgo/TenantEvents.jpg" alt="TenantEvents" height="712" width="563"></div>
+        <div class="contact">
+
+        <img src="javascript:gotoshow()" name="slide" border=0 width=563 height=343></img>
+
+        <script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+    slideshowimages("images/Nature/001.jpg","images/Nature/002.jpg","images/Nature/003.jpg","images/Nature/004.jpg","images/Nature/005.jpg", "images/Nature/006.jpg", "images/Nature/007.jpg", "images/Nature/008.jpg", "images/Nature/009.jpg", "images/Nature/010.jpg", "images/Nature/011.jpg", "images/Nature/012.jpg", "images/Nature/013.jpg", "images/Nature/014.jpg", "images/Nature/015.jpg", "images/Nature/016.jpg", "images/Nature/017.jpg", "images/Nature/018.jpg", "images/Nature/019.jpg", "images/Nature/020.jpg")
+
+
+//configure the speed of the slideshow, in miliseconds
+    var slideshowspeed=2000
+
+    var whichlink=0
+    var whichimage=0
+    function slideit(){
+    if (!document.images)
+    return
+    document.images.slide.src=slideimages[whichimage].src
+    whichlink=whichimage
+    if (whichimage<slideimages.length-1)
+    whichimage++
+    else
+    whichimage=0
+    setTimeout("slideit()",slideshowspeed)
+    }
+    slideit()
+
+//-->
+    </script>
+    <p></p>
+
+    <img SRC="images/corporatewoods/ContactInfo.jpg" alt="ContactInfo.jpg" height="343" width="563" NAME="myImage">
+                
+
+    </div>  
+    </div>
+    <div class="selection">
+
+      </br></br></br></br>
+           
+            </div>
+   
+    
+           
+            
+    <div class="menu"> 
+        <div class="menu1"><a href="index.html"><img src="images/buildingdirectorybutton.png"></a></div>
+        &nbsp;
+        <div class="menu2"><a href="campusmap.html"><img src="images/Campusmapbutton.png"></a></div>
+        &nbsp;
+        <div class="menu3"><a href="corporatewoods.html"><img src="images/cwbutton.png"></a></div>
+        <div class="menu4"><a href="wgo.html"><img src="images/wgobutton.png"></a></div>
+    </div>
+
+</body>
+</html>

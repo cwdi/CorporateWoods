@@ -1,0 +1,85 @@
+<!-- <html>
+<script>
+var imageURL = "images/CorporateWoodsBackground.jpg";
+
+if (document.images) {
+    var floor = new Image();
+    floor.src = "images/CorporateWoodsBackground.jpg";
+
+    var alpha = new Image();
+    alpha.src = "images/BuildingDirectoryAlpha.jpg";
+}
+}
+function changeImage() {
+    if (document.images) {
+          if (imageURL == "images/CorporateWoodsBackground.jpg") imageURL = "images/BuildingDirectoryAlpha.jpg";
+          else imageURL = "images/CorporateWoodsBackground.jpg";
+
+        document.myImage.src = imageURL;
+    }}
+</script>
+<body>
+<IMG SRC="floor.jpg" NAME="myImage">
+	<FORM>
+    <INPUT TYPE="Button" VALUE="Change the image source" onClick="changeImage();">
+</FORM>
+<p><input type="button" id="theButton" value="alpha" onclick="alpha()"></p>
+<p><input type="button" id="theButton" value="floor" onclick="changeImage()"></p>
+</body> -->
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<SCRIPT>
+
+var imageURL = "images/CorporateWoodsBackground.jpg";
+
+if (document.images) {
+    var clock = new Image();
+    clock.src = "images/CorporateWoodsBackground.jpg";
+
+    var cup = new Image();
+    cup.src = "images/BuildingDirectoryAlpha.jpg";
+}
+
+function floorImage() {
+    if (document.images) {
+          if (imageURL == "images/BuildingDirectoryAlpha.jpg") imageURL = "images/CorporateWoodsBackground.jpg";
+          else imageURL = "images/CorporateWoodsBackground.jpg";
+
+        document.myImage.src = imageURL;
+    }
+}
+function alphaImage() {
+    if (document.images) {
+          if (imageURL == "images/CorporateWoodsBackground.jpg") imageURL = "images/BuildingDirectoryAlpha.jpg";
+          else imageURL = "images/BuildingDirectoryAlpha.jpg";
+
+        document.myImage.src = imageURL;
+    }
+}
+
+</SCRIPT>
+</head>
+<body>
+<!-- <img src="images/BuildingDirectoryAlphaButton.jpg" width="478" height="68" alt="Alpha" usemap="#floormap">
+ -->
+<!-- <map name="floormap">
+  <area shape="rect" coords="160,0,320,68" alt="Sun" href="images/BuildingDirectoryAlphaButton.jpg">
+  <area shape="rect" coords="321,0,478,68" alt="Mercury" href="images/BuildingDirectoryByFloorButton.jpg">
+  
+</map> -->
+
+<FORM>
+	<!-- <button id="bar" type="submit"><img src="foo.img" /></button> -->
+	
+    <label for="alpha">Alphabetically</label>
+    <INPUT TYPE="radio" name="selection" VALUE="Alpha" id="alpha" onClick="alphaImage();">
+    <label for="floor">By Floor</label>
+    <INPUT TYPE="radio" name="selection" VALUE="Floor" id="floor" onClick="floorImage();">
+</FORM>
+
+<IMG SRC="images/CorporateWoodsBackground.jpg" NAME="myImage">
+</body>
+</html>

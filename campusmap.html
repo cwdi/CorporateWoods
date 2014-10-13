@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Campus Map</title>
+
+    <script>
+
+    var imageURL = "images/building_info/14.jpg";
+
+    // function changeBuilding() {
+    //     if (document.images) {
+    //       if (imageURL != "images/building_info/3.jpg") imageURL = "images/building_info/3.jpg";
+    //       else imageURL = "images/building_info/3.jpg";
+
+    //     document.myImage.src = imageURL;
+    // }}
+
+    function changeBuilding(building) {
+        if (document.images) {
+          if (imageURL != "images/building_info/"+building+".jpg") imageURL = "images/building_info/"+building+".jpg";
+          else imageURL = "images/building_info/"+building+".jpg";
+
+        document.myImage.src = imageURL;
+    }}
+
+
+
+</script>
+    
+
+</head>
+<body background="images/14CampusMapBackground.jpg">
+    <div class="pagetitle">Campus Map</div>
+   <!--  <div class="Address"> Building 14</div> -->
+</div>
+    <div class="appbody">
+        <div class="campusmap"> 
+            <img SRC="images/CampusMap.jpg" alt="Campus Map" height="650" width="1254" usemap="#campusmap"> 
+            <map name="campusmap">
+                <area shape ="rect" coords ="1003,79,1054,126"
+                onClick="changeBuilding('6')" />
+                <area shape ="rect" coords ="343,289,402,328"
+                onClick="changeBuilding('70')" />
+                <area shape ="rect" coords ="186,215,214,287"
+                onClick="changeBuilding('82')" />
+                <area shape ="rect" coords ="184,133,219,200"
+                onClick="changeBuilding('84')" />
+                <area shape ="rect" coords ="327,128,381,169"
+                onClick="changeBuilding('75')" />
+                <area shape ="rect" coords ="330,525,484,590"
+                onClick="changeBuilding('65_THE SHOPS')" />
+                <area shape ="rect" coords ="621,262,688,316"
+                onClick="changeBuilding('40')" />
+                <area shape ="rect" coords ="682,512,718,552"
+                onClick="changeBuilding('51')" />
+                <area shape ="rect" coords ="736,456,780,497"
+                onClick="changeBuilding('55')" />
+                <area shape ="rect" coords ="841,410,895,456"
+                onClick="changeBuilding('34')" />
+                <area shape ="rect" coords ="952,453,1006,495"
+                onClick="changeBuilding('27')" />
+                <area shape ="rect" coords ="1102,509,1177,567"
+                onClick="changeBuilding('14')" />
+                <area shape ="rect" coords ="1131,313,1186,392"
+                onClick="changeBuilding('12')" />
+                <area shape ="rect" coords ="1000,295,1060,333"
+                onClick="changeBuilding('24')" />
+                <area shape ="rect" coords ="970,265,1024,286"
+                onClick="changeBuilding('22')" />
+                <area shape ="rect" coords ="1032,265,1081,287"
+                onClick="changeBuilding('23')" />
+                <area shape ="rect" coords ="999,206,1027,256"
+                onClick="changeBuilding('20')" />
+                <area shape ="rect" coords ="952,453,1006,495"
+                onClick="changeBuilding('21')" />
+                <area shape ="rect" coords ="1095,73,1155,128"
+                onClick="changeBuilding('3')" />
+                <area shape ="rect" coords ="828,154,877,188"
+                onClick="changeBuilding('9')" />
+                <area shape ="rect" coords ="837,275,903,325"
+                onClick="changeBuilding('32')" />
+          
+
+
+
+            </map> 
+
+      
+             </div>
+            <div class="campusinfo"> 
+    <img SRC="images/building_info/14.jpg" alt="Building 6" height="650" width="565" name="myImage" usemap="#campusmap">
+</div>
+</div>
+    </div>
+
+   
+    <div class="selection">
+
+      </br></br></br>
+           
+            </div>
+    <div class="menu"> 
+        <div class="menu1"><a href="index.html"><img src="images/buildingdirectorybutton.png"></a></div>
+        &nbsp;
+        <div class="menu2"><a href="campusmap.html"><img src="images/Campusmapbutton.png"></a></div>
+        &nbsp;
+        <div class="menu3"><a href="corporatewoods.html"><img src="images/cwbutton.png"></a></div>
+        <div class="menu4"><a href="wgo.html"><img src="images/wgobutton.png"></a></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+/** {
+   outline: 1px solid red !important;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+
+.appbody {
+	display: flex;
+	/*max-width: 1920px;*/
+	max-height: 730px;
+
+}
+
+body {
+    overflow:hidden;
+}
+
+.pagetitle{
+	padding-top: 135px;
+	padding-left: 66px;
+	font-family: "Arial";
+	/*font-weight: bold;*/
+	font-size: 2.40em;
+	letter-spacing: -1.6px;
+	color: #5b4a40;
+}
+.Address{
+	padding-top: 55px;
+	padding-left: 66px;
+}
+.tenants {
+	max-width:  1140px;
+	padding-top: 15px;
+	padding-left: 40px;
+}
+.photos {
+	max-width: 20px;
+	padding-left: 200px;
+	padding-top: 80px;
+
+}
+.campusinfo {
+	max-width: 20px;
+	padding-left: 1275px;
+	padding-top: 80px;
+
+}
+.campusmap {
+	max-width: 20px;
+	padding-left: 33px;
+	padding-top: 100px;
+	padding-bottom: 45px;
+
+}
+.selection{
+	padding-top: 10px;
+	font-family: "Arial";
+	padding-left: 65px;
+	font-size: 1.5em;
+	max-height: 80px;
+	color: #5b4a40;
+}
+.title {
+	background: #33BEBE;
+	color: white;
+}
+.menu {
+	display: flex;
+	max-width: 1920px;
+	
+}
+.menu1 {
+	padding-top: 3px;
+	padding-left: 0px;
+	border-left: 0px;
+	position: absolute; left: 0;
+	max-width: 1920px;
+
+}
+.menu2 {
+	padding-top: 3px;
+	padding-left: 468px;
+	max-width: 1920px;
+}
+
+.menu3 {
+	padding-top: 03px;
+	padding-left: 0px;
+	max-width: 1920px;
+}
+.menu4 {
+	padding-top: 03px;
+	position: absolute;
+	right: 0;
+	max-width: 1920px;
+}
+
+.description {
+	max-width: 705px;
+	margin-left: 15px;
+	color: #7C8B88;
+}
+
+.history {
+	padding-left: 33px;
+	padding-top: 20px;
+	padding-bottom: 82px;
+	
+
+}
+
+.amenities {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 20px;
+	padding-bottom: 82px;
+	
+
+}
+
+.contact {
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 82px;
+	
+
+}
+
+.wgo {
+	padding-left: 33px;
+	padding-top: 20px;
+	padding-bottom: 82px;
+	
+
+}
+
+.tenantevents {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 20px;
+	padding-bottom: 82px;
+	
+
+}
+
+
+
+
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+
+
+
+
+
+input[type=radio] + label {
+    display:inline-block;
+    /*background-image: "images/AlphaButtonOn.jpg";*/
+    margin:-2px;
+    padding: 4px 12px;
+    background-color: none;
+    border-color: #ddd;
+}
+
+
+
+
+input[type=radio]:checked + label { 
+   background-image: none;
+   background-color: #ddd;
+}
